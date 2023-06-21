@@ -1,5 +1,23 @@
-import 'package:dart_application_training/dart_application_training.dart' as dart_application_training;
+// Importing classes in other files
+import 'abstract_class_example.dart';
+import 'employee.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_application_training.calculate()}!');
+void main() {
+  // variables
+  int a = 10;
+  double b = 10.0;
+  String name = "Prathaop";
+  bool isWorking = true;
+  var company = "Datasirpi"; // var Dynamically assign data
+
+  print("Int value $a, double value $b, string value $name, var value $company"
+      "Boolean value $isWorking");
+  // Creating object for Employee class
+  Employee emp = Employee('E001', "Junior Software Engineer");
+  emp.netSalary = 1000000.0;
+  emp.printDetails();
+  print("Net Salary ${emp.netSalary}");
+
+  Student student = Student("STU001", "Prathap");
+  student.printStudentDetails();
 }
