@@ -9,6 +9,7 @@ void main() {
   double b = 10.0;
   String name = "Prathaop";
   bool isWorking = true;
+
   var company = "Datasirpi"; // var Dynamically assign data
 
   print("Int value $a, double value $b, string value $name, var value $company"
